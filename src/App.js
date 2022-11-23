@@ -84,8 +84,8 @@ class App extends React.Component {
         <p id="author" style={{color:this.state.color, transition: "color .75s ease"}}>-{this.state.author}</p>
       </div>
       <div className='button-row'>
-        <button style={{background:this.state.color, transition: "background .75s ease"}} className='brand'><i className="fab fa-twitter"></i></button>
-        <button style={{background:this.state.color, transition: "background .75s ease"}} className='brand'><i className="fab fa-facebook"></i></button>
+        <a id="tweet-quote" href="https://www.twitter.com/intent/tweet" target={"_blank"} rel={"noopener noreferrer"}><button style={{background:this.state.color, transition: "background .75s ease"}} className='brand'><i className="fab fa-twitter"></i></button></a>
+        <a href="https://facebook.com" target={"_blank"} rel={"noopener noreferrer"}><button style={{background:this.state.color, transition: "background .75s ease"}} className='brand'><i className="fab fa-facebook"></i></button></a>
         <span><button id="new-quote" style={{background:this.state.color, transition: "background .75s ease"}} onClick={this.handleClick}>New Quote</button></span> 
       </div>
     </div>
